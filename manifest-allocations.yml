@@ -1,12 +1,12 @@
 applications:
-- name: tracker-allocations
+- name: tracker-allocations-jagantj
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-jagantj.apps.chicken.pal.pivotal.io
+  - route: allocations-pal-jagantj.cfapps.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://FILL_ME_IN
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-jagantj.cfapps.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
   services:
   - tracker-allocations-database
