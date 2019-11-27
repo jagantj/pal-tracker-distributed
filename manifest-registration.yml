@@ -1,5 +1,5 @@
 applications:
-- name: tracker-registration
+- name: tracker-registration-jagantj
   path: ./applications/registration-server/build/libs/registration-server.jar
   routes:
   - route: registration-pal-jagantj.cfapps.io
